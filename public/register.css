@@ -1,0 +1,118 @@
+/* General body and background styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Use the same font as main page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Or the color scheme of the main page */
+}
+
+/* Background image for the registration page */
+.register-background {
+  background-image: url('https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Ensures the image stays fixed in the background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(0px); /* Fixes blur issue */
+}
+
+/* Form container centered */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Light white background to pop against image */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%; /* Responsive */
+  text-align: center;
+}
+
+/* Form title */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease; /* For smooth hover effect */
+}
+
+input:focus {
+  border-color: #ff6347; /* Highlight input on focus */
+  box-shadow: 0 0 5px rgba(180, 76, 44, 0.5); /* Subtle focus effect */
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #ff6347; /* Same color as main page buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* For smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #ff4500;
+  transform: translateY(-3px); /* Button hover transition */
+}
+
+/* Text links */
+p {
+  margin-top: 10px;
+  color: #555;
+}
+
+a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,158 @@
+/* about.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.about-us-container {
+    width: 100%;
+    padding: 40px;
+}
+
+/* Heading Section */
+.about-heading {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 40px; /* Leave space from the top */
+    margin-bottom: 40px; /* Leave space after heading */
+}
+
+/* Content Layout */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Space between text and image */
+}
+
+/* Left Navigation */
+.about-left-nav {
+    flex: 0 0 20%; /* Take 20% of the space */
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+/* Main Text Section */
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+    font-size:3rem;
+}
+
+.about-text small {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Image Section */
+.about-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Quote Section */
+.quote-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /* Keep this background color as mentioned earlier */
+  padding: 40px;
+  color: white; /* Keep the text white for contrast */
+}
+/* Quote Text Styling */
+.quote-container {
+    width: 60%; /* Adjust as per need */
+  }
+  
+  .quote-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  .quote-mark {
+    font-size: 3rem; /* Large quotation marks */
+    font-style: italic;
+    font-weight: bold;
+    color: #ccc; /* Light grey for contrast */
+  }
+  
+ /* Image Styling */
+.quote-image img {
+  width: 300px; /* Square shape as requested */
+  height: 300px; /* Same height to maintain square shape */
+  object-fit: cover; /* Ensures image is cropped properly */
+  border-radius: 10px;
+}
+  /* Quote Section */
+.quote-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 249, 249); /* Dark background */
+    padding: 40px;
+    color: rgb(10, 10, 10); /* Make the text stand out on the dark background */
+  }
+  
+  /* Quote Text Styling */
+  .quote-container {
+    width: 100%; /* Adjust as per need */
+  }
+  
+  .quote-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  .quote-mark {
+    font-size: 3rem; /* Large quotation marks */
+    font-style: italic;
+    font-weight: bold;
+    color: #000000; /* Light grey for contrast */
+  }
+  
+  /* Image Styling */
+  .quote-image img {
+    width: 30%; /* Adjust as per need */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left-nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        padding-left: 0;
+        text-align: center;
+    }
+}

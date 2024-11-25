@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Gym Registration</title>
+  <link rel="stylesheet" href="register.css"> <!-- Register page styles -->
+</head>
+<body>
+  <div class="register-background"> <!-- Background container -->
+    <div class="form-container"> <!-- Centered form container -->
+      <h2>Register an Account</h2>
+      <form action="/submit-registration" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

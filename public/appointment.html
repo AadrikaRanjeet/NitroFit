@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment - NitroFit Gym</title>
+  <link rel="stylesheet" href="appointment.css"> <!-- Linking the external CSS file -->
+</head>
+<body>
+  <div class="appointment-container">
+    <form class="appointment-form" id="appointmentForm">
+      <h2>Book an Appointment</h2>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-date">Preferred Appointment Date</label>
+        <input type="date" id="appointment-date" name="appointment-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-time">Preferred Appointment Time</label>
+        <input type="time" id="appointment-time" name="appointment-time" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Book Appointment</button>
+      
+      <div id="confirmationMessage" class="confirmation-message" style="display:none;">
+        Thank you! Your appointment has been booked.
+      </div>
+    </form>
+  </div>
+
+  <script src="appointment.js"></script> <!-- Linking the external JS file -->
+</body>
+</html>

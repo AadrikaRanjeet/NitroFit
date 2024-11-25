@@ -1,0 +1,76 @@
+/* Background and Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body and html are 100% of viewport height */
+  }
+  
+  .appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://images.pexels.com/photos/11513151/pexels-photo-11513151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Ensures the background covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .appointment-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent form background */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appointment-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Confirmation Message */
+  .confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+  }
+  
